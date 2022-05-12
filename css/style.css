@@ -1,0 +1,214 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(rgb(7, 159, 230),rgb(241, 5, 5));
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin: auto;
+}
+
+nav a{
+
+    background-color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+nav a:hover{
+    color:#000;
+    background-color:#fff;
+    box-shadow: 30px 15px 15px rgb(163, 39, 39);
+    font-weight: 600;
+
+}
+
+main {
+    margin-top: 20px;
+}
+
+.imgtop {
+    width: 100%;
+}
+
+.textos {
+   width: 800px; 
+   margin: auto;
+   text-align: center;
+
+}
+
+.titulo{
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(130, 2, 168);
+}
+
+
+.paragrafo{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.textos span{
+    font-weight: bold;
+}
+
+#serviços {
+    background-image: url(/img/beneficios.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+}
+
+
+#serviços .itens {
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.39);
+    color: rgb(5, 7, 7);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+#serviços .itens p {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(6, 255, 201);
+}
+
+
+#serviços .title-beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#serviços ul {
+    transform: scale(1.1);
+    text-align: center;
+}
+
+
+#serviços ul li {
+    padding: 5px;
+    margin: 4px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#horário-funcionamento table td {
+    margin: auto;
+}
+
+#horário-funcionamento .container {
+    padding: 30px 0px;
+    width: 500px;
+    margin: auto;
+}
+
+#horario-funcionamento table {
+    margin: auto;
+}
+
+#horario-funcionamento table th {
+    width: 130px;
+    background-color: rgb(124, 122, 122);
+    border: 1px solid #000;
+}
+
+#horario-funcionamento table td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/bkg-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    padding: 40px; 
+}
+footer .container {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+footer .midias{
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+footer .midias a {
+    text-decoration: none;
+    transition: 0.3s ;
+    display: inline-block;
+}
+
+footer .midias a:hover {
+    transform: translateY(-15px);
+}
+
+footer .midias img {
+    text-decoration: none;
+}
+
+footer .midias img {
+    width: 50px;
+}
+
+@media (max-width:768px) {
+    .textos {
+        width: unset;
+    }
+}
+
+@media (max-width: 540px ) {
+   
+    nav {
+        flex-direction: column;
+        width: unset;
+        text-align: center;
+    
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+
+#serviços .itens {
+    width: unset;
+}
+
+#horario-funcionamento .container {
+    width: unset;
+}
+
+
+footer .container {
+    flex-direction: column;
+}
+}
