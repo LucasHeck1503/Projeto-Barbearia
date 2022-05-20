@@ -26,14 +26,16 @@
     </header>
 
     <nav>
-             <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
-             <a href="http://" target="_blank" rel="noopener noreferrer">Produtos</a>
-             <a href="http://" target="_blank" rel="noopener noreferrer">Contato</a>
+             <a href="index.html" rel="noopener noreferrer">Home</a>
+             <a href="produtos.html" rel="noopener noreferrer">Produtos</a>
+             <a href="contato.html" rel="noopener noreferrer">Contato</a>
     </nav>
 
     <main>          
             <section>
-                <img class="imgtop" src="img/banner.jpg" alt="">
+                <div class="imgname">
+                    <h2>Olá...</h2>
+                </div>
             <div class="textos">
                 <p class="titulo">Sobre a Barbearia Contoso</p>
                <p class="paragrafo">Localizada no coração da cidade a <span>Barbearia do Contoso</span> traz para o mercado o que há de melhor para o seu cabelo e barba. 
@@ -103,8 +105,7 @@
             <section id="video">
                 <iframe width="50%" height="400" src="https://www.youtube.com/embed/ZRQM7b_Fm2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </section>
-
-    </main>
+ </main>
     <footer>
         <div class="container">
             <img src="/img/logo-branco.png">
@@ -115,7 +116,8 @@
                 </a>
                 <a href="http://www.instagram.com/barbearia" target="_blank" rel="noopener noreferrer">
                     <img src="/img/instagram.png" alt="Instagram">
-                </a>
+         
+          </a>
                 <a href="http://www.youtube.com/barbearia contoso" target="_blank" rel="noopener noreferrer">
                     <img src="/img/youtube.png" alt="Youtube">
                 </a>
@@ -125,6 +127,18 @@
             </div>
         </div>
     </footer>
+<script>
+    const h2 = document.querySelector("h2")
 
+    h2.onclick = function (){
+        const userName = prompt("Qual é seu nome? ")
+
+        h2.textContent = `Olá... ${userName}`
+
+        if(!userName) {
+            h2.textContent = `Olá...User`
+        }
+    }
+</script>
 </body>
 </html>
